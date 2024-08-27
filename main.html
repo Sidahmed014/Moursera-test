@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script type="module" src="main.js"></script>
+    <script type="module" src="Ads.js"></script>
+
+
+    <title>MR Store</title>
+</head>
+<body>
+        <div class="popup" id="popup">
+                <img src="images/logo-black.png" alt="" width="50%">
+                <h3>Anything You need Is here</h3><br>
+                <h3 id="welcome">Welcome With us</h3><br>
+                <form id="formid">
+                    
+                <img src="images/bxs-envelope.svg" id="email-img" width="5%"> <input type="email" id="email" placeholder="ex: 123@gmail.com"> <br>
+                <img src="images/bxs-lock-alt.svg" id="pass-img" width="5%"> <input type="password" id="password" placeholder="Drop your password here"> <br>
+                <img src="images/bxs-lock-alt.svg" id="usera" width="5%" style="visibility: hidden;"> <input type="text" id="username" placeholder="Username" style="visibility: hidden;"> <br>    
+            </form>
+                <p id="panelmsg">You don't have an Account?<span class="newacc"> Create New Account here</span></p> <br>
+                <button id="loginbutton">LOGIN</button> <br>        
+                <button class="close">Close</button>   
+    </div>
+
+
+    <nav>
+        <div class="nav-bar">
+            <img id="logo" class="logo" src="images/logo-black.png" alt="" width="5%">
+
+        <div class="menu">
+            <ul class="nav-links">
+                <li><a href="">Home</a></li>
+                <li><a href="#">Featured</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">New Arrivals</a></li>
+            </ul>
+        </div>
+
+        <div class="signin-section">
+            <i class='bx bx-user iuser' ></i>
+            <li class="drop__item" id="drop__item">
+                <div class="nav-account-username" id="nav-account-username"></div>
+                <ul class="drop__down">
+                    <li><img src="https://blog.tofte-it.dk/wp-content/uploads/2018/12/profile-picture.png"></li>
+                    <li class="account-username">MR07</li>
+                    <li><i class='bx bx-credit-card'></i><a href="" class="drop__link">My Orders</a></li>
+                    <li><i class='bx bx-bookmark'></i><a href="" class="drop__link">Wishlist</a></li>
+                    <li><i class='bx bx-support'></i><a href="" class="drop__link">My Credit Card</a></li>
+                    <li><i class='bx bxs-discount'></i><a href="" class="drop__link">My Coupons</a></li>
+                    <li><a class="signinbutton"> Sign In</a></li>
+
+
+                </ul>
+            </li>
+            <i class='bx bx-heart heart' ></i>
+            <div class="card">
+                <i class='bx bx-shopping-bag' onmousedown="SwitchToCard(event)"></i>
+                <label class="count">1</label>
+            </div>
+            <div class="nighmood">
+                <i class='bx bx-sun sun' ></i>
+                <i class='bx bx-moon moon moon' ></i>
+            </div>
+        </div>
+        <div class="search-bar">
+            <input class="search-box" type="text" placeholder="Search...">
+            <i class='bx bx-search-alt-2 isearch' ></i>
+        </div>
+    </div>
+    </nav>
+    
+    <section class="ads-section">
+        <div class="style-lists">
+            <div class="ads-list" id="ads-list">
+                <div class="lists" id="lists">
+                <div class="ads-item" id="ads-item">
+                    <img src="https://graphicsfamily.com/wp-content/uploads/edd/2022/11/Online-Shopping-AD-Banner-Design-in-Photoshop-scaled.jpg" alt="">
+                </div>
+                <div class="ads-item" id="ads-item">
+                    <img src="https://img.freepik.com/free-psd/horizontal-banner-online-fashion-sale_23-2148585404.jpg" alt=""><br><br>
+                </div>
+                <div class="ads-item" id="ads-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji27hydpaCs4kFdF-dwgLa6ZZIrn4zNL9fnOUCvzUKM14I8irBahfO5xzmRHCB1g_iCrBm1gByYyvkIhC2Fs_zDi45TkmdIkC2YnNeQP7OYfk18HTUGGgGYRDp3G0ERZccg7TFSUE-s-I1xq4cpUxUoZR4oPvvq-4O11ASq_ljLbk52J5iK957NGBR/s1280/fashion%20banner%20design.webp" alt="">
+                </div>
+                <div class="ads-item" id="ads-item">
+                    <img src="https://i.pinimg.com/736x/47/06/f6/4706f6fe7efb8495b86053611ae70923.jpg" alt="">
+                </div>
+
+                <div class="ads-item" id="ads-item">
+                    <img src="images/New Project.png" alt="">
+                </div>
+
+                <div class="ads-item" id="ads-item">
+                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/shoe-ad-design-template-ac9143b6f1e19c67ca095e154faa68a6_screen.jpg?ts=1651741664" alt="">
+                </div>
+
+            </div>
+            </div>
+        </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+            </ul>
+    </section>
+    
+
+
+<section class="products-section">
+
+    <div class="home-categories">
+        <h2>Explore By Your Categories</h2>
+        <span id="line"></span>
+        <div class="categories-section">
+        <div class="men-section">
+            <img src="https://img.freepik.com/free-photo/full-shot-man-running-with-shopping-bags_23-2149220644.jpg" width="90%">
+            <button>Men <span>&#10143</span></button>
+        </div>
+        <div class="women-section">
+            <img width="90%" src="https://img.freepik.com/free-photo/studio-shot-pretty-black-woman-with-white-shopping-bag-standing-yellow-background-trendy-spring-fashionable-look_273443-10.jpg" alt="">
+            <button>Women <span>&#10143</span></button>
+
+        </div>
+        <div class="shoes-section">
+            <img src="https://backend.orbitvu.com/sites/default/files/image/shoe-photography-mini_1.jpg" width="70%">
+            <button>Shoes <span>&#10143</span></button>
+
+        </div>
+    </div>
+    </div>
+
+    <h2>Featured Products</h2>
+    <span id="line"></span>
+    <br>
+
+    <div id="list-products" class="list-products">
+        <div class="item">
+            <img src="https://sportsclassicstore.com/cdn/shop/files/RealMadridHome.png?v=1697138871" alt=""><br><br>
+            <p>MR07</p><br>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star-half'></i>
+            <i class='bx bx-star'></i> <br>
+            <div class="price">DA 30,000</div><br>
+            <button class = "btn">Quick View</button>
+        </div>
+
+        <div class="item">
+            <img src="https://sportsclassicstore.com/cdn/shop/files/RealMadridHome.png?v=1697138871" alt=""><br><br>
+            <p>MR07</p><br>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star-half'></i>
+            <i class='bx bx-star'></i> <br>
+            <div class="price">DA 30,000</div><br>
+            <button class = "btn">Quick View</button>
+        </div>
+
+        <div class="item">
+            <img src="https://sportsclassicstore.com/cdn/shop/files/RealMadridHome.png?v=1697138871" alt=""><br><br>
+            <p>MR07</p><br>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star-half'></i>
+            <i class='bx bx-star'></i> <br>
+            <div class="price">DA 30,000</div><br>
+            <button class = "btn">Quick View</button>
+        </div>
+
+        <div class="item">
+            <img src="https://sportsclassicstore.com/cdn/shop/files/RealMadridHome.png?v=1697138871" alt=""><br><br>
+            <p>MR07</p><br>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star-half'></i>
+            <i class='bx bx-star'></i> <br>
+            <div class="price">DA 30,000</div><br>
+            <button class = "btn">Quick View</button>
+        </div>
+
+    </div>
+<br>
+
+    <h2>Latest Products</h2>
+    <span id="line"></span>
+    <br>
+
+    <div id="list-products" class="list-products">
+        <div class="item">
+            <img src="https://sportsclassicstore.com/cdn/shop/files/RealMadridHome.png?v=1697138871" alt=""><br><br>
+            <p>MR07</p><br>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star-half'></i>
+            <i class='bx bx-star'></i> <br>
+            <div class="price">DA 30,000</div><br>
+            <button class = "btn">Quick View</button>
+        </div>
+
+        <div class="item">
+            <img src="https://sportsclassicstore.com/cdn/shop/files/RealMadridHome.png?v=1697138871" alt=""><br><br>
+            <p>MR07</p><br>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star-half'></i>
+            <i class='bx bx-star'></i> <br>
+            <div class="price">DA 30,000</div><br>
+            <button class = "btn">Quick View</button>
+        </div>
+
+        <div class="item">
+            <img src="https://sportsclassicstore.com/cdn/shop/files/RealMadridHome.png?v=1697138871" alt=""><br><br>
+            <p>MR07</p><br>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star-half'></i>
+            <i class='bx bx-star'></i> <br>
+            <div class="price">DA 30,000</div><br>
+            <button class = "btn">Quick View</button>
+        </div>
+
+        <div class="item">
+            <img src="https://nb.scene7.com/is/image/NB/mt33915bk_nb_40_i?$pdpflexf2$&wid=440&hei=440" alt=""><br><br>
+            <p>MR07</p><br>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star-half'></i>
+            <i class='bx bx-star'></i> <br>
+            <div class="price">DA 30,000</div><br>
+            <button class = "btn">Quick View</button>
+        </div>
+
+        <div class="item">
+            <img src="https://sportsclassicstore.com/cdn/shop/files/RealMadridHome.png?v=1697138871" alt=""><br><br>
+            <p>MR07</p><br>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star-half'></i>
+            <i class='bx bx-star'></i> <br>
+            <div class="price">DA 30,000</div><br>
+            <button class = "btn">Quick View</button>
+        </div>
+
+        <div class="item">
+            <img src="https://nb.scene7.com/is/image/NB/mt33915bk_nb_40_i?$pdpflexf2$&wid=440&hei=440" alt=""><br><br>
+            <p>MR07</p><br>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star-half'></i>
+            <i class='bx bx-star'></i> <br>
+            <div class="price">DA 30,000</div><br>
+            <button class = "btn">Quick View</button>
+        </div>
+
+        <div class="item">
+            <img src="https://sportsclassicstore.com/cdn/shop/files/RealMadridHome.png?v=1697138871" alt=""><br><br>
+            <p>MR07</p><br>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star-half'></i>
+            <i class='bx bx-star'></i> <br>
+            <div class="price">DA 30,000</div><br>
+            <button class = "btn">Quick View</button>
+        </div>
+
+        <div class="item">
+            <img src="https://nb.scene7.com/is/image/NB/mt33915bk_nb_40_i?$pdpflexf2$&wid=440&hei=440" alt=""><br><br>
+            <p>MR07</p><br>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star-half'></i>
+            <i class='bx bx-star'></i> <br>
+            <div class="price">DA 30,000</div><br>
+            <button class = "btn">Quick View</button>
+        </div>
+
+
+
+    </div>
+
+
+</section>
+
+
+<section class="about-us">
+
+    <div>
+        <p class="dwnld">Download Our app</p>
+        <p>Download App for Android and Ios mobile phone.</p>
+        <img src="images/play-store.png" alt="" width="30%">
+        <img src="images/app-store.png" alt="" width="30%">
+    </div>
+    <div class="logo">
+        <p class="logo-text">MR STORE</p>
+        <p>Our purpose To Sustainably Make the Pleasure of Provide for Anything You Need </p>
+    </div>
+
+    <div class="links">
+        <p>Follow us</p>
+        <i class='bx bxl-facebook-circle'></i><br>
+        <i class='bx bxl-instagram' ></i><br>
+        <i class='bx bxl-twitter'></i>
+    </div>
+
+
+
+</section>
+
+
+
+
+
+
+
+        <script>
+            function SwitchToCard(event) {
+              if(event.button == 1){
+                window.open("test.html");
+              } else if(event.button == 0){
+                window.location.assign("test.html");
+              }
+            }
+            </script>
+
+
+</body>
+</html>

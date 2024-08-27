@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="test.css">
+
+
+
+  <script type="text/javascript">
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        var country_code = this.responseText.replace(/(\r\n|\n|\r)/gm,"").split('loc=');
+        country_code = country_code[1].split('tls=');
+        country_code = country_code[0];
+        document.getElementById("countrycode-container").innerHTML = country_code;
+      }
+    };
+    //OPEN HTTP Request
+    xhttp.open("GET", "https://www.cloudflare.com/cdn-cgi/trace", true);
+    xhttp.send();
+  </script>
+</head>
+<body>
+<div id="countrycode-container"></div>
+
+<div class="container">
+  <div class="image">
+    <img src="https://i.pinimg.com/736x/47/06/f6/4706f6fe7efb8495b86053611ae70923.jpg" alt="">
+  </div>
+  <div class="image">
+    <img src="https://cdn.luxe.digital/media/2019/09/12084906/casual-dress-code-men-street-style-luxe-digital-1.jpg" alt="">
+  </div>
+  <div class="image">
+    <img src="https://i.pinimg.com/736x/47/06/f6/4706f6fe7efb8495b86053611ae70923.jpg" alt="">
+  </div>
+  <div class="image">
+    <img src="https://cdn.luxe.digital/media/2019/09/12084906/casual-dress-code-men-street-style-luxe-digital-1.jpg" alt="">
+  </div>
+  <div class="image">
+    <img src="https://i.pinimg.com/736x/47/06/f6/4706f6fe7efb8495b86053611ae70923.jpg" alt="">
+  </div>
+
+  <div class="button">
+      <a onclick="nextimg(-1)" class="prev">❮</a>
+      <a onclick="nextimg(1)" class="next">❯</a>
+  </div>
+
+  <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+</div>
+
+<script>
+
+  var imageno =1;
+  displayimg(imageno);
+
+  function nextimg(n){
+      displayimg(imageno += n)
+  }
+
+  function currentSlide(n){
+      displayimg(imageno = n)
+  }
+
+  function displayimg(n){
+      var i;
+      var image = document.getElementsByClassName("image");
+      var dots = document.getElementsByClassName("dot");
+
+      if(n > image.length){
+          imageno = 1;
+      }
+
+      if(n < 1){
+          imageno = image.length;
+      }
+
+      for(i=0; i < image.length; i++){
+          image[i].style.display = "none";
+      }
+
+      for(i=0; i < dots.length; i++){
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      image[imageno - 1].style.display ="block";
+      dots[imageno - 1].className += " active";
+
+  }
+
+</script>
+
+
+
+
+
+</body>
+</html>
